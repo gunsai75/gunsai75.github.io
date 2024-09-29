@@ -11,7 +11,7 @@ nav {
     padding: 10% 0 10% 0;
 }
 
-a:link {
+.navigator a:link {
     padding: 10px;
     text-decoration: none;
     background-color: #8C4799;
@@ -19,7 +19,7 @@ a:link {
     color: #f9d1e6;
 }
 
-a:visited {
+.navigator a:visited {
     padding: 10px;
     text-decoration: none;
     background-color: #8C4799;
@@ -27,13 +27,15 @@ a:visited {
     color: #f9d1e6;
 }
 
-a:hover {
+.navigator a:hover {
     padding: 10px;
     text-decoration: none;
     background-color: #f9d1e6;;
     /* background-color: #dcdcff; */
     color: #8C4799
 }
+
+
 
 hr {
     border: 1px solid #8C4799;

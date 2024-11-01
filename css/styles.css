@@ -1,10 +1,25 @@
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("/css/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Chakra Petch";
+    src: url(/css/fonts/Chakra_Petch/ChakraPetch-Regular.ttf);
+}
+
 body {
+    font-family: "Chakra Petch";
     /* font-family: 'Courier New', Courier, monospace; */
     background-color: #bbd1ff;
     color: #D00070;
     /*background-color: #000000;
     color: #aaff00;*/
     padding: 2pc 20% 0 20%;
+}
+
+p {
+    font-family: "Playfair";
 }
 
 nav {

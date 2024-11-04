@@ -20,11 +20,14 @@ body {
 }
 
 nav {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 0 10px 0;
 }
 
 .navigator a:link {
+    margin-bottom: 5px;
+    margin-right: 3px;
     padding: 10px;
     text-decoration: none;
     background-color: #8C4799;

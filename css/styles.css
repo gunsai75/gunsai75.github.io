@@ -8,9 +8,34 @@
     src: url(/css/fonts/Chakra_Petch/ChakraPetch-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Saira";
+    src: url(/css/fonts/Saira/Saira-VariableFont_wdth\,wght.ttf),
+    url(/css/fonts/Saira/Saira-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(/css/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf), 
+    url(/css/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url(/css/fonts/spacemono/SpaceMono-Regular.ttf),
+    url(/css/fonts/spacemono/SpaceMono-Italic.ttf),
+    url(/css/fonts/spacemono/SpaceMono-BoldItalic.ttf),
+    url(/css/fonts/spacemono/SpaceMono-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: larger;
-    font-family: "Chakra Petch";
+    font-family: "Saira";
     /* font-family: 'Courier New', Courier, monospace; */
     background-color: #bbd1ff;
     color: #D00070;
@@ -19,40 +44,116 @@ body {
     padding: 2pc 20% 0 20%;
 }
 
-nav {
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Mono";
+    font-weight: 500;
+}
+/* 
+.navbar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #8C4799;
+} */
+
+/* nav {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0 10px 0;
+}*/
+
+/* .navigator {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    gap: 10px;
+    box-sizing: border-box;
+} */
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    gap: 10px;  /* This is good: it sets horizontal spacing */
+    box-sizing: border-box;
 }
 
-.navigator a:link {
-    margin-bottom: 5px;
-    margin-right: 3px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #8C4799;
-    /* background-color: #dcdcff; */
-    color: #f9d1e6;
-}
-
+.navigator a:link,
 .navigator a:visited {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 80px;  /* increase if needed */
+    box-sizing: border-box;
+
     text-decoration: none;
     background-color: #8C4799;
-    /* background-color: #dcdcff; */
     color: #f9d1e6;
+
+    /* remove these for horizontal layout: */
+    /* margin-bottom: 5px; */
+    /* margin-right: 3px; */
+
+    /*border-radius: 6px;  Optional visual polish */
 }
+
 
 .navigator a:hover {
-    padding: 10px;
+    box-sizing: border-box;
     text-decoration: none;
     background-color: #f9d1e6;;
     /* background-color: #dcdcff; */
     color: #8C4799
 }
 
+.content {
+    padding: 1em 0em 1em 0em;
+}
 
+.content > p {
+    margin-top: 0.2em;
+    /* padding-left: 20px; */
+}
+
+#content_p {
+    margin-top: 14px;
+}
+
+#About {
+    margin-bottom: 0.3em;
+    /* padding-left: 20px; */
+}       
+/* .Links {
+    padding: 1em 0em 1em 0em;
+}
+*/
+
+.Links > p {
+    margin-top: 0.2em;
+} 
 
 hr {
     border: 1px solid #8C4799;
+}
+
+#sub {
+    border: 1px solid #8b47998d;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+footer {
+    margin-top: 2em;
 }
